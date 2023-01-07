@@ -1,6 +1,11 @@
 import styles from '../styles';
+import React from "react";
 
-const StartSteps = ({ number, text }) => (
+interface Props {
+  number: boolean ;
+  text: string;
+}
+const StartSteps = ({ number, text }: Props) => (
   <div className={`${styles.flexCenter} flex-row`}>
     <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}

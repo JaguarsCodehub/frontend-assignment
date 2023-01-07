@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import React from 'react';
 
 const RootLayout = ({ children }) => (
   <html lang="en">

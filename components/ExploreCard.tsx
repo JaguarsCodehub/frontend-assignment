@@ -1,11 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import React from "react";
 
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+interface Props {
+  id: number;
+  imgUrl: string;
+  title: string;
+  index: number;
+  active: number;
+  handleClick: object
+}
+
+const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }: Props) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
